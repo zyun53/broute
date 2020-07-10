@@ -8,5 +8,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "node-echonet-lite": "^0.6.0",
+    "serialport": "^9.0.0"
+  }
 }
