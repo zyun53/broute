@@ -1,0 +1,16 @@
+# /etc/systemd/system/broute.service
+[Unit]
+Description=broute daemon
+
+[Service]
+ExecStart=/usr/bin/node index.js
+WorkingDirectory=/opt/broute
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=Express
+Environment=NODE_ENV=production PORT=8080
+
+[Install]
+WantedBy=multi-user.target
